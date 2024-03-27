@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nuages>
+    <variété nom="Altocumulus">
+        <altitude minimum="2000m" maximum="6000m"/>
+        <espèces>
+            <espèce nom="lenticularis"/>
+            <espèce nom="stratiformis"/>
+            <espèce nom="castellanus"/>
+            <espèce nom="flocus"/>
+        </espèces>
+    </variété>
+    <variété nom="Cirrus">
+        <altitude minimum="6000m" maximum="12000m"/>
+        <espèces>
+            <espèce nom="spissatus"/>
+            <espèce nom="uncinus"/>
+            <espèce nom="fibratus"/>
+            <espèce nom="lenticularis"/>
+            <espèce nom="stratiformis"/>
+            <espèce nom="castellanus"/>
+        </espèces>
+    </variété>
+    <variété nom="Cirrocumulus">
+        <altitude minimum="5000m" maximum="7000m"/>
+        <espèces>
+            <espèce nom="lenticularis"/>
+            <espèce nom="stratiformis"/>
+            <espèce nom="castellanus"/>
+            <espèce nom="flocus"/>
+        </espèces>
+    </variété>
+    <variété nom="Cumulus">
+        <altitude minimum="200m" maximum="2000m"/>
+        <espèces>
+            <espèce nom="fractus"/>
+            <espèce nom="mediocris"/>
+            <espèce nom="humilis"/>
+            <espèce nom="congestus"/>
+        </espèces>
+    </variété>
+    <variété nom="Strato-cumulus">
+        <altitude minimum="0m" maximum="2000m"/>
+        <espèces>
+            <espèce nom="stratiformis"/>
+            <espèce nom="lenticularis"/>
+            <espèce nom="castellanus"/>
+        </espèces>
+    </variété>
+    <variété nom="Cumulonimbus">
+        <altitude minimum="300m" maximum="18000m"/>
+        <espèces>
+            <espèce nom="calvus"/>
+            <espèce nom="capillatus"/>
+            <espèce nom="mammatus"/>
+        </espèces>
+        <hydrométéores>
+            <hydrométéore nom="averse"/>
+            <hydrométéore nom="neige"/>
+            <hydrométéore nom="grésil"/>
+            <hydrométéore nom="grêle"/>
+        </hydrométéores>
+    </variété>
+</nuages>

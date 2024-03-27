@@ -1,0 +1,81 @@
+/* Style général du corps du document */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Centre le texte horizontalement */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style spécifique pour les éléments <h1> */
+h1 {
+    color: #0066cc;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le conteneur du carrousel */
+#carrousel {
+    position: relative; /* Positionnement relatif pour positionner les images en absolu à l'intérieur */
+    width: 700px; /* Largeur fixe */
+    height: 400px; /* Hauteur fixe */
+    overflow: hidden; /* Masque le contenu débordant */
+    margin: 0 auto; /* Centrage horizontal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée pour un effet 3D */
+}
+
+/* Styles pour les images à l'intérieur du carrousel */
+#carrousel img {
+    position: absolute; /* Positionnement absolu par rapport au parent relatif */
+    top: 0; /* Positionnée tout en haut du conteneur */
+    left: 0; /* Positionnée tout à gauche du conteneur */
+    width: 100%; /* Largeur complète du conteneur */
+    height: 100%; /* Hauteur complète du conteneur */
+}
+
+/* Styles pour le conteneur des boutons de navigation directe */
+#direct-nav {
+    margin-top: 10px;
+}
+
+/* Styles pour les boutons à l'intérieur de #direct-nav */
+#direct-nav button {
+    border: none;
+    background: none;
+    padding: 5px; /* Marge intérieure */
+}
+
+/* Styles pour les images à l'intérieur des boutons de #direct-nav */
+#direct-nav button img {
+    border: 1px solid #ccc; /* Bordure grise */
+    opacity: 0.7; /* Opacité réduite */
+    transition: opacity 0.3s, border 0.3s; /* Transition pour l'opacité et la bordure */
+}
+
+/* Styles pour l'image active dans #direct-nav */
+#direct-nav button img.active {
+    border: 2px solid black; /* Bordure noire pour l'élément actif */
+    opacity: 1; /* Opacité pleine */
+}
+
+/* Effet au survol pour les images dans les boutons */
+#direct-nav button img:hover {
+    opacity: 1; /* Opacité pleine au survol */
+}
+
+/* Styles pour tous les boutons */
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer; /* Curseur en forme de pointeur */
+    transition: background-color 0.3s; /* Transition pour la couleur de fond */
+}
+
+/* Effet au survol pour tous les boutons */
+button:hover {
+    background-color: #0056b3; /* Changement de couleur au survol */
+}

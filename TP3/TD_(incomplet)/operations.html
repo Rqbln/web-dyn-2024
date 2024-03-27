@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operations Mathematiques</title>
+    <script src="operations.js"></script>
+</head>
+<body>
+<h1>Calcul de base</h1>
+<form>
+    <table>
+        <tr>
+            <td>1er Numero :</td>
+            <td><input type="number" id="firstNumber"></td>
+        </tr>
+        <tr>
+            <td>2eme Numero :</td>
+            <td><input type="number" id="secondNumber"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="addition()" value="Ajouter"></td>
+            <td><input type="button" onclick="soustraction()" value="Soustraire"></td>
+        </tr>
+        <tr>
+            <td><input type="button" onclick="multiplication()" value="Multiplier"></td>
+            <td><input type="button" onclick="division()" value="Diviser"></td>
+        </tr>
+    </table>
+</form>
+<p>Le resultat est <br> <span id="result"></span></p>
+</body>
+</html>

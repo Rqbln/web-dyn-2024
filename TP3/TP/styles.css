@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column; /* Pour aligner verticalement */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Choisissez une police agréable */
+    background-color: #f4f4f4; /* Couleur de fond de la page */
+}
+
+h1 {
+    color: #333; /* Couleur du titre */
+    margin-bottom: 20px; /* Espacement avant la grille */
+}
+
+#container {
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre portée pour le conteneur */
+    padding: 20px;
+    border-radius: 5px; /* Coins arrondis pour le conteneur */
+    background-color: #fff; /* Fond blanc pour le conteneur */
+}
+
+#gameGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px; /* Espacement après la grille */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px solid #333; /* Bordure plus visible */
+    cursor: pointer; /* Cursor en forme de main au survol */
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+#gameInfo {
+    border: 2px solid #666; /* Bordure pour gameInfo */
+    padding: 10px;
+    border-radius: 5px; /* Coins arrondis pour gameInfo */
+    background-color: #e9e9e9; /* Couleur de fond pour gameInfo */
+}
+
+button {
+    background-color: #5cb85c; /* Couleur de fond pour le bouton */
+    color: white; /* Texte en blanc pour le bouton */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; /* Coins arrondis pour le bouton */
+    cursor: pointer; /* Cursor en forme de main au survol */
+    font-size: 16px;
+    margin-top: 10px; /* Espacement au-dessus du bouton */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Couleur de fond au survol pour le bouton */
+}
+

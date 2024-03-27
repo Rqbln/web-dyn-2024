@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma super page web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 8px;
+            background-color: #007bff;
+            margin-bottom: 1px;
+        }
+        ul li a {
+            color: white;
+            display: block;
+        }
+        ol {
+            margin-top: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 0 50px; /* ajoute une marge en bas */
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #f8d7da;
+        }
+    </style>
+</head>
+<body>
+<p>
+    Je suis personnellement assez attiré par les <a href="https://fr.wikipedia.org/wiki/Homo_sapiens">homos</a> sapiens
+</p>
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Prénom</th>
+        <th>Courriel</th>
+    </tr>
+    <tr>
+        <td>Segado</td>
+        <td>JP</td>
+        <td>jpsegado@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Hina</td>
+        <td>Manolo</td>
+        <td>mdhina@yahoo.fr</td>
+    </tr>
+</table>
+
+<a href="http://www.ece.fr">
+    <img src="ece.jpg" alt="Visitez le site de l'ECE" height="100" width="100">
+</a>
+
+<form action="submit_form.html" method="post">
+    <table>
+        <tr>
+            <td>Identifiant</td>
+            <td><input type="text" name="login"></td>
+        </tr>
+        <tr>
+            <td>Mot de passe</td>
+            <td><input type="password" name="passw"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit" value="Connexion"></td>
+        </tr>
+    </table>
+</form>
+
+<ul>
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Contenu</a></li>
+    <li><a href="#">Paramètres</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">À propos</a></li>
+</ul>
+
+<ol>
+    <li>Article 1 pour l'anniversaire</li>
+    <li>Article 2 pour l'anniversaire</li>
+    <li>Article 3 pour l'anniversaire</li>
+</ol>
+
+<footer>
+    <small>
+        <p>Conçu par Robin Quériaux, 2024. Contactez-moi à <a href="mailto:admission@ece.fr">admission@ece.fr</a></p>
+    </small>
+</footer>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio <b>CO2</b>, quis placerat ante luctus eu.
+</p>
+</body>
+</html>

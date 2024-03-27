@@ -1,0 +1,17 @@
+<!ELEMENT waters (bottle+)>
+        <!ELEMENT bottle (ions+, materials?)>
+        <!ATTLIST bottle brand CDATA #REQUIRED
+                volume CDATA #REQUIRED
+                source CDATA #REQUIRED
+                department CDATA #REQUIRED
+                barcode CDATA #REQUIRED
+                ph CDATA #REQUIRED>
+        <!ELEMENT ions (ion+)>
+        <!ATTLIST ions type (positive|negative) #REQUIRED>
+        <!ELEMENT ion EMPTY>
+        <!ATTLIST ion name CDATA #REQUIRED
+                concentration CDATA #REQUIRED>
+        <!ELEMENT materials (material*)>
+        <!ELEMENT material EMPTY>
+        <!ATTLIST material name CDATA #REQUIRED
+                state CDATA #IMPLIED>

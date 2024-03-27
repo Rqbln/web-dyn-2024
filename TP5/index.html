@@ -1,0 +1,103 @@
+<!-- Définit le type de document et la version de HTML (HTML5 ici) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Titre de la page, affiché dans l'onglet du navigateur -->
+    <title>TP5: Introduction au Framework Bootstrap</title>
+    <!-- Définition de l'encodage des caractères pour la page -->
+    <meta charset="utf-8">
+    <!-- Meta-tag pour la responsivité, contrôle la mise à l'échelle de la page sur différents appareils -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Lien vers la feuille de style de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Lien vers la feuille de style personnalisée -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Scripts pour jQuery et Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Barre de navigation avec prise en charge de l'effondrement pour les petits écrans -->
+<nav class="navbar navbar-expand-md">
+    <!-- Logo ou marque de la navbar -->
+    <a class="navbar-brand" href="#">Logo</a>
+    <!-- Bouton pour les affichages mobiles qui déplie le menu de navigation -->
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Éléments de navigation -->
+    <div class="collapse navbar-collapse" id="main-navigation">
+        <ul class="navbar-nav">
+            <!-- Liens de navigation -->
+            <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">A propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- En-tête de la page avec image et texte de bienvenue -->
+<header class="page-header header container-fluid">
+    <!-- Superposition pour l'image d'arrière-plan -->
+    <div class="overlay"></div>
+    <!-- Contenu de l'en-tête -->
+    <div class="description">
+        <!-- Titre de bienvenue -->
+        <h1>Bienvenue à la page de votre destination!</h1>
+        <!-- Texte descriptif -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- Bouton d'appel à l'action -->
+        <button class="btn btn-outline-secondary btn-lg">Dites m'en plus!</button>
+    </div>
+</header>
+
+<!-- Section principale avec trois colonnes pour les fonctionnalités ou informations -->
+<div class="container features">
+    <div class="row">
+        <!-- Première colonne avec image et texte -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Lorem ipsum</h3>
+            <img src="column1.jpg" class="img-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Deuxième colonne avec image et texte -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Lorem ipsum</h3>
+            <img src="column2.jpg" class="img-fluid">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Troisième colonne avec formulaire de contact -->
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <h3 class="feature-title">Entrer en contact!</h3>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Votre nom:" name="">
+                <input type="email" class="form-control" placeholder="Courriel:" name="email">
+                <textarea class="form-control" rows="4">Vos commentaires</textarea>
+                <input type="submit" class="btn btn-secondary btn-block" value="Envoyer" name="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Information additionnelle</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <p>37, quai de Grenelle, 75015 Paris, France<br>info@webDynamique.ece.fr<br>+33 01 02 03 04 05<br>+33 01 03 02 05 04</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.header').height($(window).height());
+    });
+</script>
+</body>
+</html>

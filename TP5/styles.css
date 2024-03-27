@@ -1,0 +1,152 @@
+/* Réinitialise les marges et le padding pour le body et définit une couleur de fond */
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+}
+
+/* Personnalise l'arrière-plan de la barre de navigation */
+.navbar {
+    background: #6ab446;
+}
+
+/* Définit la couleur du texte pour la marque et les liens de navigation */
+.navbar-brand, .nav-link {
+    color: #fff !important; /* L'utilisation de !important assure que cette règle a la priorité. */
+}
+
+/* Change la couleur du texte des liens de navigation au survol */
+.nav-link:hover {
+    color: #000;
+}
+
+/* Style de l'en-tête de la page, avec une image de fond */
+.page-header {
+    position: relative;
+    width: 100%;
+    background-image: url('background.jpg');
+    background-size: cover; /* Couvre entièrement la zone tout en gardant les proportions */
+    background-position: center; /* Centre l'image */
+}
+
+/* Superposition pour créer un effet visuel sur l'image d'arrière-plan */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Couleur semi-transparente */
+}
+
+/* Positionne et centre la description dans l'en-tête */
+.description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre parfaitement l'élément */
+    text-align: center;
+}
+
+/* Styles pour le titre et le paragraphe dans la section de description */
+.description h1 {
+    color: #6ab446;
+}
+
+.description p {
+    color: #fff;
+    font-size: 1.3rem; /* Taille de police */
+    margin-bottom: 20px; /* Marge en dessous du paragraphe */
+}
+
+/* Style du bouton avec un contour */
+.btn-outline-secondary {
+    color: #fff;
+    border-color: #fff;
+}
+
+/* Style du bouton au survol */
+.btn-outline-secondary:hover {
+    color: #6ab446;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* Marges et padding pour la section des fonctionnalités */
+.features {
+    margin: 4em auto; /* Centrage horizontal */
+    padding: 1em;
+}
+
+/* Style des titres dans la section des fonctionnalités */
+.feature-title {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700; /* Gras */
+    margin-bottom: 20px; /* Marge en dessous */
+    text-transform: uppercase; /* Texte en majuscules */
+}
+
+/* Style des images dans la section des fonctionnalités pour ajouter une ombre */
+.features img {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 16px;
+    width: 100%; /* Rend les images responsives */
+}
+
+/* Marge en dessous des champs de formulaire */
+.features .form-control {
+    margin-bottom: 10px;
+}
+
+/* Style du bouton de soumission du formulaire */
+.features input[type="submit"] {
+    background-color: #6ab446;
+    border-color: #6ab446;
+    color: #fff;
+}
+
+/* Style du bouton de soumission au survol */
+.features input[type="submit"]:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+/* Style du pied de page */
+.page-footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 60px 0 30px;
+}
+
+/* Couleur de texte spécifique pour les éléments text-uppercase dans le pied de page */
+.page-footer .text-uppercase {
+    color: #fff;
+}
+
+/* Couleur des liens dans le pied de page */
+.page-footer a {
+    color: #6ab446;
+}
+
+/* Styles spécifiques pour les écrans de moins de 576px de large */
+@media (max-width: 575.98px) {
+    .description {
+        left: 0;
+        padding: 0 15px;
+        top: 10%;
+        transform: none;
+    }
+
+    .description h1 {
+        font-size: 2em; /* Taille de police plus grande pour le titre */
+    }
+
+    .description p {
+        font-size: 1.2rem; /* Taille de police ajustée */
+    }
+
+    .features {
+        margin: 0;
+    }
+}

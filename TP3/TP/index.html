@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeu de Morpion</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+</head>
+<body>
+<h1>Jeu de Morpion</h1> <!-- Titre du jeu affiché en haut de la page -->
+<div id="container">
+    <div id="gameGrid">
+        <!-- Grille du jeu de Morpion avec 9 cases -->
+        <!-- Les cases sont générées dynamiquement via JavaScript -->
+    </div>
+    <div id="gameInfo">
+        <!-- Informations sur la partie en cours, y compris le score et le message de statut -->
+        <p id="statusMessage">Bonjour! Cliquez sur la grille pour jouer.</p> <!-- Message d'accueil ou de statut de la partie -->
+        <p>Bleu: <span id="blueScore">0</span> Rouge: <span id="redScore">0</span></p> <!-- Scores des joueurs Bleu et Rouge -->
+        <button onclick="newGame()">Nouvelle partie</button> <!-- Bouton pour démarrer une nouvelle partie -->
+    </div>
+</div>
+<script src="script.js"></script> <!-- Lien vers le fichier JavaScript qui gère la logique du jeu -->
+</body>
+</html>

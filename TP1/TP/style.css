@@ -1,0 +1,65 @@
+/*
+    J'ai décidé d'ajouter du code CSS supplémentaire pour me former et améliorer mes compétences en mise en page et design web.
+    Cela me permet de pratiquer la personnalisation visuelle des pages HTML.
+*/
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+footer, .wrapper:after {
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px 20px 60px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.home-link, .home-link:visited {
+    color: white; /* Assure que le lien et le lien visité sont en blanc */
+    text-decoration: none;
+}

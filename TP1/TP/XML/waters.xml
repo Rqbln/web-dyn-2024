@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE waters SYSTEM "C:\Users\Zoé\Documents\ECE\ING2\Semestre 2\Web dynamique\TP1\TP\XML\waters.dtd">
+<waters>
+    <bottle brand="Cristaline" volume="150" source="St-Cyr la Source" department="Loiret" barcode="3274080005003" ph="7.45">
+        <ions type="positive">
+            <ion name="calcium" concentration="71" />
+            <ion name="magnesium" concentration="5.5" />
+        </ions>
+        <ions type="negative">
+            <ion name="chloride" concentration="20" />
+            <ion name="nitrate" concentration="1" />
+        </ions>
+        <materials>
+            <material name="iron" state="suspension" />
+        </materials>
+    </bottle>
+    <bottle brand="Cristaline" volume="50" source="Aurèle" department="Alpes Maritimes" barcode="3268840001008" ph="7.4">
+        <ions type="positive">
+            <ion name="calcium" concentration="98" />
+            <ion name="magnesium" concentration="4" />
+        </ions>
+        <ions type="negative">
+            <ion name="chloride" concentration="3.6" />
+            <ion name="nitrate" concentration="2" />
+        </ions>
+    </bottle>
+    <bottle brand="Volvic" volume="50" source="Volvic" department="Puy-de-Dôme" barcode="3057640117008" ph="7">
+        <ions type="positive">
+            <ion name="calcium" concentration="11.5" />
+            <ion name="magnesium" concentration="8" />
+        </ions>
+        <ions type="negative">
+            <ion name="chloride" concentration="13.5" />
+            <ion name="nitrate" concentration="6.3" />
+        </ions>
+        <materials>
+            <material name="silice" />
+        </materials>
+    </bottle>
+</waters>

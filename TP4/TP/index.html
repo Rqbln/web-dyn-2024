@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrousel d'images</title> <!-- Définit le titre affiché dans l'onglet du navigateur -->
+    <!-- Inclusion de jQuery, une bibliothèque JavaScript pour faciliter la manipulation du DOM et d'autres fonctionnalités -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Lien vers le fichier CSS externe pour styliser la page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Titre principal de la page -->
+<h1>La belle France</h1>
+<!-- Conteneur pour le carrousel d'images -->
+<div id="carrousel">
+    <!-- Chaque image du carrousel -->
+    <img src="france1.jpg" width="700" height="400"/>
+    <img src="france2.jpg" width="700" height="400"/>
+    <img src="france3.jpg" width="700" height="400"/>
+    <img src="france4.jpg" width="700" height="400"/>
+    <img src="france5.jpg" width="700" height="400"/>
+    <img src="france6.jpg" width="700" height="400"/>
+    <img src="france7.jpg" width="700" height="400"/>
+</div>
+<br>
+<!-- Boutons pour naviguer entre les images précédentes et suivantes -->
+<button id="prev">Précédent</button>
+<button id="next">Suivant</button>
+<!-- Conteneur pour les boutons de navigation directe vers chaque image du carrousel -->
+<div id="direct-nav"></div>
+
+<!-- Script JavaScript utilisant jQuery pour contrôler le comportement du carrousel -->
+<script>
+    $(document).ready(function() {
+        // Initialisation des variables pour le carrousel
+        var $carrousel = $('#carrousel'),
+            $img = $('#carrousel img'),
+            indexImg = $img.length - 1,
+            i = 0,
+            $currentImg = $img.eq(i);
+
+        // Cache toutes les images sauf la première
+        $img.hide();
+        $currentImg.show();
+
+        // Génère les boutons de navigation directe et les ajoute au DOM
+        $img.each(function(index) {
+            var imgSrc = $(this).attr('src');
+            var button = $(`<button class="direct-btn" data-index="${index}"><img src="${imgSrc}" width="50" height="25"></button>`);
+            button.appendTo('#direct-nav');
+            if (index === i) {
+                button.find('img').addClass('active');
+            }
+        });
+
+        // Change l'image en fonction du bouton de navigation directe cliqué
+        $('.direct-btn').click(function() {
+            i = $(this).data('index');
+            changeImage(i);
+        });
+
+        // Fonctions pour naviguer vers l'image suivante ou précédente
+        function slideNext() {
+            i = i < indexImg ? i + 1 : 0;
+            changeImage(i);
+        }
+
+        function slidePrev() {
+            i = i > 0 ? i - 1 : indexImg;
+            changeImage(i);
+        }
+
+        // Change l'image affichée et met à jour la classe active pour la miniature correspondante
+        function changeImage(index) {
+            $img.fadeOut(400);
+            $currentImg = $img.eq(index).fadeIn(400);
+            $('.direct-btn img').removeClass('active');
+            $('.direct-btn').eq(index).find('img').addClass('active');
+        }
+
+        // Associe les fonctions slideNext et slidePrev aux boutons suivant et précédent
+        $('#next').click(slideNext);
+        $('#prev').click(slidePrev);
+    });
+</script>
+</body>
+</html>

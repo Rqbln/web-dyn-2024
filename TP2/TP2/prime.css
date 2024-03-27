@@ -1,0 +1,68 @@
+body {
+    background-color: #003366;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    background-color: #ffffcc;
+    padding-left: 10px;
+}
+
+.leftcolumn {
+    float: left;
+    width: 150px;
+    background-color: #ffffcc;
+    height: 70px;
+}
+
+.rightcolumn {
+    margin-left: 150px;
+    padding: 20px;
+    background-color: #ffffcc;
+    clear: both;
+}
+
+#nav a, #nav2 a {
+    display: inline-block;
+    text-align: center;
+}
+
+#nav, #nav2 {
+    text-align: center;
+}
+
+#nav a:hover, #nav2 a:hover {
+    text-decoration: underline; /* Souligner au survol */
+    color: violet; /* Changement de couleur au survol */
+}
+
+.property {
+    display: block; /* Les images s'afficheront sur leur propre ligne. */
+}
+
+#footer {
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    clear: both;
+    padding: 10px 0; /* Espace en dessous et au dessus du texte */
+}
+
+
+
+.labelCol {
+    float: left;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.myRow {
+    padding-bottom: 20px;
+}
+
+.mySubmit {
+    margin: 10px;
+}

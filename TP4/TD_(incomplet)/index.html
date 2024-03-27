@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Exemple jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<p class="clickable">Cliquez-moi pour me faire disparaitre !</p>
+<script>
+    $(document).ready(function() {
+        $('.clickable').click(function() {
+            $(this).hide();
+        });
+    });
+</script>
+
+<img id="bird1" src="bird1.jfif" height="100" width="120">
+<img id="bird2" src="bird2.jfif" height="100" width="120">
+<img id="bird3" src="bird3.jpg" height="100" width="120">
+<img id="bird4" src="bird4.jpg" height="100" width="120">
+<img id="bird5" src="bird5.png" height="100" width="120">
+<img id="bird6" src="bird6.png" height="100" width="120">
+<img id="bird7" src="bird7.png" height="100" width="120">
+
+<script>
+    $(document).ready(function() {
+        // Disparaît au clic
+        $("#bird1").click(function() {
+            $(this).hide();
+        });
+
+        // Disparaît au double clic
+        $("#bird2").dblclick(function() {
+            $(this).hide();
+        });
+
+        // Disparaît lentement quand la souris entre
+        $("#bird3").mouseenter(function() {
+            $(this).fadeOut(1000);
+        });
+
+        // Disparaît lentement quand la souris sort
+        $("#bird4").mouseleave(function() {
+            $(this).fadeOut(1000);
+        });
+
+        // Disparaît lentement quand le bouton de la souris est enfoncé
+        $("#bird5").mousedown(function() {
+            $(this).fadeOut(1000);
+        });
+
+        // Disparaît lentement quand le bouton de la souris est relâché
+        $("#bird6").mouseup(function() {
+            $(this).fadeOut(1000);
+        });
+
+        // Disparaît lentement au survol (mouseenter + mouseleave)
+        $("#bird7").hover(
+            function() {
+                $(this).fadeOut(1000);
+            }, function() {
+                $(this).fadeIn(1000);
+            }
+        );
+    });
+</script>
+
+
+
+</body>
+</html>
